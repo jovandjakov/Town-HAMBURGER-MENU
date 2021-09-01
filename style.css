@@ -1,0 +1,495 @@
+:root {
+    --plava: #3496d8;
+    --tamnoSiva: #8f8f8f;
+    --bela: #fff;
+    --crvena: rgb(255, 75, 75);
+    --padding: 50px 0;
+    --padding2: 20px 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900|Slabo+27px');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+    color: var(--tamnoSiva);
+    line-height: 1.5;
+}
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+#bt {
+        position: fixed;
+        display: none;
+        background: var(--plava);
+        color: var(--bela);
+        padding: 10px;
+        border-radius: 14px;
+        border: none;
+        font-size: 1.2rem;
+        left: 85%;
+        top: 90%;
+        z-index: 999;
+}
+#bt:hover {
+        background: var(--crvena);
+        cursor: pointer;
+        transition: .4s ease;
+}
+/********** HEADER ***********/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--bela);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1 a {
+    color: var(--bela);
+    text-decoration: none;
+    font-size: 2rem;
+    
+}
+nav h1 {
+    padding: 20px 50px;
+}
+nav ul {
+    display: flex;
+    padding: 20px 50px;
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: var(--bela);;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav ul li a:hover {
+    color: rgb(150, 22, 209);
+}
+header hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+header h2 {
+    font-size: 5rem;
+    text-shadow: 3px 3px 16px black;
+}
+header h4 {
+    font-size: 2rem;
+    
+}
+header h5 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding-top: 20px ;
+}
+nav .hamburger  {
+    margin: 25px 50px;
+    padding: 0 12px;
+    color: rgb(255, 250, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 253, 253);
+    cursor: pointer;
+    display: none;
+}
+nav .hamburger:hover  {
+    color: rgb(150, 22, 209);
+    border: 2px solid rgb(150, 22, 209);
+}
+/********** INTRODUCTION ***********/
+.introduction {
+    display: flex;
+    padding: var(--padding);
+}
+img {
+    width: 100%;
+}
+.introduction .col {
+    flex: 1;
+}
+.introduction .col:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.introduction h2 {
+    color: var(--plava);
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.introduction p {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+.introduction button {
+    background: var(--plava);
+    color: var(--bela);
+    width: 250px;
+    padding: 15px 40px;
+    border-radius: 24px;
+    border: none;
+    font-size: 1.2rem;
+}
+.introduction button:hover {
+    background: var(--crvena);
+    cursor: pointer;
+    transition: .4s ease;
+}
+/********** SERVICES ***********/
+.services {
+    display: flex;
+    text-align: center;
+    padding: var(--padding);
+    justify-content: space-between;
+}
+.services article {
+    flex: 0 0 30%;
+}
+.services article h3 {
+    color: var(--crvena);
+    font-size: 4rem;
+}
+.services article h2 {
+    color: var(--plava);
+    font-size: 1.5rem;
+}
+.services article p {
+    text-align: justify;
+}
+
+
+
+/********** WORKS ***********/
+.works {
+    padding: var(--padding);
+}
+.works h2 {
+    color: var(--plava);
+    font-size: 3rem;
+    text-align: center;
+}
+.works p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+.img1 {
+    background-image: url(img/works1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img2 {
+    background-image: url(img/works2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img3 {
+    background-image: url(img/works3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img4 {
+    background-image: url(img/works4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img5 {
+    background-image: url(img/works5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img6 {
+    background-image: url(img/works6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.works .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.works article {
+    flex: 0 0 30%;
+    margin-bottom: 60px;
+    position: relative;
+    border-bottom: 10px solid var(--crvena)
+}
+.works article h4 {
+    background: var(--crvena);
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--bela);
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+
+
+
+/********** FOOTER ***********/
+footer {
+    background-image: url(img/footer.jpg);
+    background-position: center;
+    background-position: cover;
+    height: 100vh;
+    color: var(--bela);
+}
+footer h2 {
+    font-size: 4rem;
+    padding: 50px 0 20px 0;
+    
+}
+footer .line1{
+    width: 1150px;
+    height: 2px;
+    background: var(--bela);
+
+}
+footer .line2{
+    width: 300px;
+    height: 8px;
+    background: var(--bela);
+
+}
+footer p {
+    font-size: 1.2rem;
+    padding: 50px 0 20px 0;
+    
+}
+footer .art {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer .art div {
+    font-size: 2rem;
+    flex: 0 0 50%;
+    padding-bottom: 60px;
+}
+footer input {
+    padding: 15px 30px 15px 10px ;
+    background: var(--plava);
+    border: none;
+    font-size: 1.1rem;
+}
+footer button {
+    background: var(--crvena);
+    padding: 15px 20px 15px 20px ;
+    position: absolute;
+    top: 112px;
+    border: none;
+    cursor: pointer;
+    color: var(--bela);
+    font-size: 1.1rem;
+}
+
+
+/********** RESPONSIVE ***********/
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 90%;
+    }
+    nav {
+        padding: 0 50px;
+    }
+    nav .hamburger  {
+        margin: 20px;
+        padding: 0 12px;
+        color: rgb(255, 250, 250);
+        background: transparent;
+        border: 2px solid rgb(255, 253, 253);
+        cursor: pointer;
+        display: block;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li a {
+        padding: 10px;
+        color: var(--bela);
+        letter-spacing: 1px;
+    }
+    nav ul li a:hover {
+        padding: 10px;
+        color: rgb(150, 22, 209);
+        letter-spacing: 1px;
+    }
+    /*----------------------*/
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+    header {
+        height: 80vh;
+    }
+    header hgroup {
+        height: 50%;
+    }
+    nav h1 {
+        padding: 10px;
+    }
+    header h2 {
+        font-size: 2rem;
+    }
+    header h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    header h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding-top: 10px;
+    }
+    .introduction {
+        display: block;
+        padding: var(--padding2);
+    }
+    .introduction .col:last-child {
+        padding-left: 0;
+    }
+    .introduction p {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+    .introduction h2 {
+        color: var(--plava);
+        font-size: 2rem;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .introduction button {
+        width: 150px;
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+    .services {
+        display: block;
+        padding: var(--padding2);
+    }
+    .services article h3 {
+        font-size: 2.5rem;
+    }
+    .services article h2 {
+        color: var(--plava);
+        font-size: 1.3rem;
+    }
+    .works .row {
+        display: block;
+    }
+    .works {
+        padding: var(--padding2);
+    }
+    .works article h4 {
+        padding: 5px 15px;
+        color: var(--bela);
+        top: 0;
+        left: 30%;
+    }
+    .works h2 {
+        font-size: 2rem;
+    }
+    .works p {
+        text-align: justify;
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+    .works article {
+        flex: 0 0 30%;
+        margin-bottom: 30px;
+        position: relative;
+        border-bottom: 4px solid var(--crvena);
+    }
+    .row > article {
+        height: 300px;
+    }
+    footer {
+        height: 80vh;
+    }
+    footer .art {
+        display: block;
+    }
+    footer .art div {
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+    }
+    footer h2 {
+        font-size: 2rem;
+        padding: 20px 0 10px 0;
+    }
+    footer .line1 {
+        width: 240px;
+        height: 1px;
+    }
+    footer .line2 {
+        width: 160px;
+        height: 4px;
+    }
+    footer p {
+        font-size: 1rem;
+        padding: 25px 0 10px 0;
+        text-align: justify;
+    }
+    footer input {
+        padding: 10px ;
+        font-size: 0.7rem;
+    }
+    footer button {
+        padding: 10px ;
+        top: 164.5px;
+        font-size: 0.7rem;
+    }
+    #bt {
+        position: fixed;
+        display: none;
+        font-size: 1rem;
+        left: 70%;
+        top: 90%;
+        z-index: 999;
+    }
+    
+}
+
+
+
+
+
+
+
